@@ -20,7 +20,7 @@ $(document).ready(function(){
                     commentArea = $('#commentArea'),
                     commentText = commentArea.val().trim(),
                     label = form.find('.label-title'),
-                    errorText = 'Комментарий не может быть пустым. Привет из js)',
+                    errorText = commentArea.attr('data-error-text'),
                     errorTooltip = $('<div class="error">' + errorText + '</div>');
 
                 if ( commentText.length === 0 ) {
